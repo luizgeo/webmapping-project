@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Map Project</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Flexbox for the gallery layout */
+        .map-gallery {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px; /* Space between each image */
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+        
+        /* Styling for each map item */
+        .map-item {
+            width: 200px; /* Adjust to make images smaller */
+            height: 200px; /* Adjust to make images smaller */
+            border-radius: 50%; /* Make it circular */
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        /* Style for the image to fill the map-item circle */
+        .map-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image fully covers the div */
+        }
+
+        /* Hover effect */
+        .map-item:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        /* Optional: Styling for the text below each image */
+        .map-item h3 {
+            text-align: center;
+            color: #333;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Map Project</h1>
+        <h2>Exploring Geographic Insights through Interactive Maps</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stpatrickpark.html">St. Patrick's Park</a></li>
+            <li><a href="floodrisk.html">Flood Risk</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Ecosystem Services</a>
+                <div class="dropdown-content">
+                    <a href="waterquality.html">Water Quality</a>
+                    <a href="vegetationcarbon.html">Vegetation Carbon Sequestration</a>
+                    <a href="terrestrialfood.html">Food Provision</a>
+                </div>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="top-textbox">
+            <h3>About This Project</h3>
+            <p>This website showcases a selection of interactive maps created as part of the Web Mapping module of our Digital Mapping and GIS course. By utilizing powerful, open-source tools like QGIS and qgis2web, we aim to enhance our ability to analyze and share spatial data with the world.</p>
+            <p>Each map offers a unique perspective on various geographical and environmental themes, from park's infrastructure to risk assessment and ecosystem services. Explore these interactive maps to gain a deeper understanding of our planet and the challenges it faces.</p>
+        </div>
+
+        <!-- Map Gallery Section -->
+        <div class="map-gallery">
+            <!-- Link for St. Patrick’s Map -->
+            <a href="stpatrickpark.html" class="map-link">
+                <div class="map-item">
+                    <img src="Image/StPaddyPark.jpg" alt="St. Patrick Map">
+                    <h3>St. Patrick</h3>
+                </div>
+            </a>
+
+            <!-- Link for Flood Map -->
+            <a href="floodrisk.html" class="map-link">
+                <div class="map-item">
+                    <img src="Image/Flood Zones.jpg" alt="Flood Zones Map">
+                    <h3>Flood Risk</h3>
+                </div>
+            </a>
+
+            <!-- Link for Vegetation Carbon Map -->
+            <a href="vegetationcarbon.html" class="map-link">
+                <div class="map-item">
+                    <img src="C:\Users\LUIZ\Desktop\WebMappingTest\Image\Carbon dioxide cycle.jpg" alt="Vegetation Carbon Map">
+                    <h3>Vegetation Carbon</h3>
+                </div>
+            </a>
+
+            <!-- Link for Water Quality Map -->
+            <a href="waterquality.html" class="map-link">
+                <div class="map-item">
+                    <img src="C:\Users\LUIZ\Desktop\WebMappingTest\Image\waterways.jpg" alt="Water Quality Map">
+                    <h3>Water Quality</h3>
+                </div>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web Map Project | Created as part of the ATU Web Mapping module</p>
+    </footer>
+</body>
+</html>

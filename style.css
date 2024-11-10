@@ -1,0 +1,416 @@
+/* Global Styles */
+body {
+font-family: 'Geograph', sans-serif;
+background-color: #f7f2b8;
+background-image: url("Image/pexels-ekrulila-3837487.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin: 0;
+padding: 0;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+text-align: center;
+padding: 30px 0;
+color: #AAA014;
+}
+
+header h1 {
+font-size: 48px;
+font-weight: bold;
+margin: 0;
+}
+
+header h2 {
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+margin-bottom: 15px;
+color: #AAA014;
+margin: 10px 0 0;
+}
+
+
+/* Navigation Bar Styles */
+nav ul {
+list-style: none;
+padding: 10px;
+display: flex;
+justify-content: center;
+background: rgba(255, 255, 255, 0.8);
+margin: 0;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+border-radius: 20px;
+}
+
+nav ul li {
+margin: 0 15px;
+}
+
+nav ul li a {
+color: #e76816;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 15px;
+transition: background-color 0.3s;
+font-weight: bold;
+}
+
+nav ul li a:hover {
+background-color: #f0f0f0;
+}
+
+/* Homepage Intro Box */
+.intro-container {
+background-color: #fef9e7;
+border-radius: 15px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+padding: 30px;
+margin: 30px auto;
+max-width: 800px;
+text-align: center;
+color: #4d480a;
+}
+
+.intro-container h3 {
+font-size: 24px;
+font-weight: bold;
+text-align: center;
+margin-bottom: 15px;
+}
+
+/* Map Page Layout */
+.map-display-container {
+margin: 0 auto;
+max-width: 900px;
+padding: 20px;
+
+}
+.top-textbox,
+.bottom-textbox {
+background-color: #fef9e7;
+border-radius: 15px;
+padding: 15px;
+margin: 10px auto;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+text-align: justify;
+color: #4d480a;
+line-height: 1.5
+}
+
+/* Style for justified text in the description paragraphs */
+.top-textbox p, .bottom-textbox p {
+text-align: justify;
+line-height: 1.6;
+font-size: 16px;
+color: #4d480a;
+}
+/* Style for the YouTube video link */
+.video-link {
+text-align: center; /* Center-align the link */
+margin-top: 10px; /* Space above the link */
+}
+
+.video-link a {
+color: #1a0dab; /* Standard blue color for links */
+font-weight: bold; /* Make the link bold */
+text-decoration: none; /* Remove underline by default */
+}
+
+.video-link a:hover {
+text-decoration: underline; /* Underline on hover */
+}
+
+.iframe-container {
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 20px auto;
+}
+
+.legend-box img {
+width: 200px; /* Adjust size */
+height: auto;
+border-radius: 5px;
+}
+
+.map-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    padding: 30px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.map-item {
+    width: 80px; /* Set size for the circular container */
+    height: 80px;
+    border-radius: 10%; 
+    background-size: cover; /* Scale background image to cover the container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent repeating the image */
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.map-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills container without distortion */
+    display: block; /* Removes any inline spacing */
+    border-radius: 10%; /* Ensures image itself is circular within container */
+    
+    
+    transition: transform 0.3s;
+}
+
+.map-item h3 {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.map-item:hover {
+    transform: scale(1.05);
+}
+
+.map-item:hover img {
+    transform: scale(1.1);
+}
+@media (max-width: 900px) {
+    .map-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Stacks items in one column on small screens */
+    }
+}
+@media (max-width: 600px) {
+    .map-gallery {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+}
+.map-item {
+        width: 100%;
+        height: auto;
+    }
+}
+.legend-box img {
+width: 80%; /* Scale image to fit within legend box */
+height: auto;
+border-radius: 5px;
+}
+/* Map Container */
+.map-container {
+padding: 20px;
+position: relative; /* Keeps absolute elements positioned correctly */
+max-width: 1000px;
+margin: 0 auto 60px;
+background: none; /* Removes background color or image */
+box-shadow: none; /* Removes extra shadow from container */
+}
+
+/* Embedded EPA map iframe styling */
+.map-container iframe {
+width: 100%;
+max-width: 900px;
+height: 600px;
+border: 2px solid #ddd;
+border-radius: 10px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Optional shadow */
+background: none; /* Ensures iframe shows on page's background */
+}
+
+
+iframe {
+background-color: rgba(254, 249, 231, 0.6);
+width: 100%;
+max-width: 800px;
+height: 600px;
+border: 2px solid #ddd;
+border-radius: 10px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* Global Styles (as in previous code) */
+
+/* Navigation Styles */
+nav ul {
+list-style: none;
+padding: 10px;
+display: flex;
+justify-content: center;
+background: rgba(255, 255, 255, 0.8);
+margin: 0;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+border-radius: 20px;
+}
+
+nav ul li {
+position: relative; /* Needed for dropdown positioning */
+margin: 0 15px;
+}
+
+nav ul li a {
+color: #e76816;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 15px;
+transition: background-color 0.3s;
+font-weight: bold;
+}
+
+nav ul li a:hover {
+background-color: #f0f0f0;
+}
+
+/* Dropdown Menu */
+.dropdown .dropbtn {
+cursor: pointer;
+}
+
+/* Dropdown content */
+.dropdown-content {
+display: none; /* Hidden by default */
+position: absolute;
+top: 100%; /* Position below the button */
+left: 0;
+background-color: #fef9e7;
+min-width: 160px;
+box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+z-index: 1;
+}
+
+.dropdown-content a {
+color: #4d480a;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+background-color: #e0d4a3;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+/* Center and style info and contact sections */
+.info-container, .contact-container {
+max-width: 800px;
+margin: 30px auto;
+padding: 20px;
+background-color: #fef9e7;
+border-radius: 15px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-container h3, .contact-container h3 {
+font-size: 28px;
+color: #333;
+text-align: center;
+margin-bottom: 15px;
+}
+
+.info-container p, .contact-container p, form label {
+font-size: 16px;
+color: #4d480a;
+line-height: 1.6;
+}
+
+/* Style contact form */
+form {
+display: flex;
+flex-direction: column;
+}
+
+input[type="text"], input[type="email"], textarea {
+width: 100%;
+padding: 10px;
+margin-bottom: 15px;
+border: 1px solid #ddd;
+border-radius: 5px;
+box-sizing: border-box;
+}
+
+button[type="submit"] {
+padding: 10px 20px;
+font-size: 16px;
+font-weight: bold;
+color: #fff;
+background-color: #e76816;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+background-color: #c05c14;
+}
+.justified-text {
+    text-align: justify;
+    line-height: 1.6;
+}
+/* Style for About Us Page */
+.map-section {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.google-map-container {
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Map Embed */
+.google-map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 10px;
+}
+.location-heading {
+    font-family: 'Geograph', sans-serif;
+    color:  #f7f2b8; 
+    font-weight: bold;
+}
+.source-link {
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 10px; /* Add space around the text */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 20px; /* Space above the source box */
+    font-size: 14px; /* Adjust font size for better readability */
+}
+
+.source-link a {
+    color: #0066cc; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.source-link a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+
+/* Footer and Main Content (from previous styling) */
+
+
+/* Footer */
+footer {
+text-align: center;
+padding: 10px;
+background-color: rgba(255, 255, 255, 0.8);
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+border-radius: 10px;
+}

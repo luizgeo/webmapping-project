@@ -1,0 +1,129 @@
+<!DOCTYPE html>  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Risk</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Centering the iframe video */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        iframe {
+            width: 400px; /* Adjust the width of the video */
+            height: 225px; /* Adjust the height of the video */
+            border-radius: 10px; /* Optional: round the corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a shadow */
+        }
+
+        .video-container {
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .video-container h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .iframe-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flood Risk</h1>
+    </header>
+    <h1>Web Map Project</h1>
+    <p>Explore the map for [Map Name]</p>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stpatrickpark.html">St. Patrick's Park</a></li>
+            <li><a href="floodrisk.html">Flood Risk</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Ecosystem Services</a>
+                <div class="dropdown-content">
+                    <a href="waterquality.html">Water Quality</a>
+                    <a href="vegetationcarbon.html">Vegetation Carbon Sequestration</a>
+                    <a href="terrestrialfood.html">Food Provision</a>
+                </div>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="map-container">
+            <div class="top-textbox">
+                <h2>Flood Susceptibility Mapping: Protecting Sorocaba, Brazil</h2>
+                <p>Climate change is a pressing concern, and its impact through increased flooding is a harsh reality. Devastating floods like those in Rio Grande do Sul, Brazil, highlight the urgency of preparing our communities. This project focuses on flood susceptibility mapping, a tool that empowers communities to mitigate flood risks.</p>
+                <h2>Mapping Flood Risk in Sorocaba</h2>
+                <p>By identifying areas with a high risk of flooding, we can make informed decisions. This project created a flood susceptibility map for Sorocaba, Brazil, using QGIS and the **Height Above Nearest Drainage (HAND) model.</p>
+                <small>You can learn more about the HAND model on the <a href="https://handmodel.ccst.inpe.br/?page_id=326&lang=en">National Institute for Space Research (INPE) website</a>.</small>
+                <ul style="list-style-position: inside; text-align: justify;">
+                    <li>Disaster Preparedness: Identifying areas at risk allows for proactive planning and resource allocation.</li>
+                    <li>Risk Mitigation: Informed land-use decisions can minimize flood impact on infrastructure and communities.</li>
+                    <li>Early Warning Systems: Flood susceptibility maps are crucial components of early warning systems.</li>
+                </ul>
+                <strong>Please explore the map below.</strong>
+            </div>
+            <div class="iframe-container">
+                <iframe src="C:\Users\LUIZ\Desktop\WebMappingTest\webmap2\Map2.html" title="Flood Risk Map" loading="lazy"></iframe>
+            </div>
+
+            <div class="bottom-textbox">
+                <h2>Understanding the Map</h2>
+                <p>The map reveals several critical areas within Sorocaba susceptible to flooding, including areas near hospitals and schools. This could disrupt essential services during flood events. While a deeper social-economic analysis is needed, these flood-prone areas likely include densely populated and potentially disadvantaged communities.</p>
+
+                <h2>Using the Map for Action</h2>
+                <p>This map is a crucial tool for targeted Risk Mitigation Strategies and Emergency Response Planning. However, it's important to use it alongside other data sources, like:</p>
+                <ul style="list-style-position: inside; text-align: justify;">
+                    <li>Socioeconomic Data: Understanding demographics of flood-prone areas helps prioritize vulnerable populations.</li>
+                    <li>Population Density Maps: Identifying densely populated flood zones helps focus resources on high-risk areas.</li>
+                </ul>
+
+                <h2>Open-Source Tools for Real-World Solutions</h2>
+                <p>This project utilized QGIS and the HAND model, both free and open-source tools. This demonstrates the power of readily available resources in addressing real-world environmental challenges. The knowledge gained here can be applied to similar projects focusing on flood susceptibility mapping or other spatial analysis tasks.</p>
+
+                <h2>Conclusion</h2>
+                <p>Flood susceptibility mapping, using tools like QGIS and the HAND model, empowers communities to prepare for floods. The map created for Sorocaba is a valuable tool for stakeholders involved in disaster preparedness and land-use planning. This project highlights the importance of readily available resources and GIS technology in addressing real-world environmental challenges.</p>
+
+                <hr style="border: none; border-top: 2px solid #333; width: 100%; margin: 20px auto;">     
+
+                <h2>Flood in Ireland</h2>
+                <p>Ireland, while not typically associated with devastating floods, has experienced significant flooding events in recent years. These events have highlighted the vulnerability of certain areas, particularly in coastal regions and along major river systems. To mitigate the impact of future floods, various measures have been implemented, including the development of flood defense systems, improved drainage infrastructure, and early warning systems.</p>
+
+                <p>However, the increasing frequency and intensity of extreme weather events, exacerbated by climate change, pose ongoing challenges. Therefore, it is crucial to have a comprehensive understanding of flood risk areas. The map below provides a visual representation of flood susceptibility in a specific region, allowing for informed decision-making and effective planning to protect communities and infrastructure.</p>
+            </div>
+        </section>
+
+        <!-- Embed 1st YouTube Video -->
+        <div class="video-container">
+            <h3 style="color: white;">Understanding Flood Risks and Mitigation Strategies</h3>
+            <iframe src="https://www.youtube.com/embed/cCZWkMXJwQE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Embed 2nd YouTube Video -->
+        <div class="video-container">
+            <h3 style="color: white;">Flood Management: Mitigating the Impacts of Flooding</h3>
+            <iframe src="https://www.youtube.com/embed/nf-Yy3EuZi0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Web Map Project | Created as part of the Web Mapping module project</p>
+    </footer>
+</body>
+</html>
